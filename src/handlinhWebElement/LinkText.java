@@ -32,7 +32,7 @@ System.setProperty("webdriver.gecko.driver","C:\\Users\\Saiful Chowdhury\\OneDri
 	
 	System.out.println(driver.getCurrentUrl());
 	
-	driver.close();
+	//driver.close();
 	
 	}
 
