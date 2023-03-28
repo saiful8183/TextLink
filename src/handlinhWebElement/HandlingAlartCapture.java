@@ -5,12 +5,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class HandlingAlartCapture {
 
+
 	public static void main(String[] args) {
-	
 		
+
+	
 System.setProperty("webdriver.gecko.driver","C:\\Users\\Saiful Chowdhury\\OneDrive\\Desktop\\Driver\\geckodriver.exe");
 		
 		WebDriver driver=new FirefoxDriver();
@@ -34,11 +37,13 @@ System.setProperty("webdriver.gecko.driver","C:\\Users\\Saiful Chowdhury\\OneDri
 //         
 //         Thread.sleep(1000);
 //         driver.quit();
-         
-         
+      
        Alert popup= driver.switchTo().alert();
        System.out.println(popup.getText());
        popup.accept();
+       
+       
+    
       // driver.quit();
    
 
